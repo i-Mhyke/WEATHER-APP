@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="weatherapp.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cookie|El+Messiri|Lobster|M+PLUS+Rounded+1c|Marck+Script|Neucha|Philosopher|Playball|Sanchez|Tangerine&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+</head>
+<body>
+        <header class="masthead">
+            <nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#" style="font-size:45px;"><i style="color:#E2B659;" class="fas fa-cloud"></i> Weather Check</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse">
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="navbar-collapse collapse justify-content-end" id="collapse">
+                        <ul class="navbar-nav">
+                            <li class="navbar-item mx-3"><a class="navbar-link" href="#">WEATHER</a></li>
+                            <li class="navbar-item mx-3"><a class="navbar-link" href="#">NEWS</a></li>
+                            <li class="navbar-item mx-3"><a class="navbar-link" href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row" id="search_container">
+            <div class="col-md-6 col-sm-8">
+            <form id="search_item">
+                  <div class="input-group input-group-lg">
+                    <input type="text" class="form-control border-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" id="search_value"
+                    placeholder="&#xF002; Input City" style="font-family:Arial, FontAwesome">
+                    <div class="input-group-append">
+                        <button class="btn ml-2" type="submit">search</button>
+                      </div>
+                  </div>
+            </form> 
+            </div>
+            <div class="col-md-6 col-sm-8 mt-sm-3">
+                <h5 class="text-center animated bounceInDown">GET CURRENT WEATHER REPORT</h5>
+            </div>
+            </div>
+            </div>
+            <div class="container" id="report_container">
+                <div id="error" class="text-center mt-5">
+                    
+                </div>
+                <!--div class="text-center mt-5">
+                    <h3>LAGOS <span class="badge badge-warning">NG</span></h3>
+                    <h2>33<sup>o</sup> C</h2>
+                
+                <div class="cloud" style="font-size: 60px;">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <h4>THUNDER STORM</h4> 
+                </div-->
+
+            </div>
+        </header>
+        <div></div>
+
+    <script src="js/jquery.js"></script>
+    <script src="umd/pooper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="anime-master/lib/anime.min.js"></script>   
+    <script src="weatherapp.js"></script>
+</body>
+</html>
