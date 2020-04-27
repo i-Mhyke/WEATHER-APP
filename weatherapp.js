@@ -36,14 +36,14 @@ const weatherApp = ()=> {
 
             return reports.map( (report) =>{
                 template += `
-                <div class="text-center mt-5 animated bounceInDown">
-                    <h2>${report.city_name} <span class="badge badge-warning">${report.country_code}</span></h2>
+                <div class="text-center mt-md-5 mt-sm-2 animated bounceInDown">
+                    <h3>${report.city_name} <span class="badge badge-warning">${report.country_code}</span></h2>
                     <h1>${Math.round(report.temp)}<sup>o</sup> C</h1>
                 
                 <div style="font-size: 60px;">
                     <img class="cloud" class="cloud"src=" https://www.weatherbit.io/static/img/icons/${report.weather.icon}.png">
                 </div>
-                <h4>${report.weather.description}</h4> 
+                <h3 style="color:#E2B659;">${report.weather.description}</h3> 
                 </div>
                 `
                 parent.innerHTML = '';
@@ -64,9 +64,9 @@ const weatherApp = ()=> {
             
             .catch((error) => {
                 parent.innerHTML = '';
-                parent.insertAdjacentHTML("afterbegin", `<div id="error" class="text-center mt-5">
-                    <h1 class="emoji">😕</h1>
-                    <h3>SORRY CITY NOT FOUND</h3>
+                parent.insertAdjacentHTML("afterbegin", `<div id="error" class="text-center mt-5 animated bounceInLeft">
+                    <h2 class="emoji">😕</h2>
+                    <h4>SORRY CITY NOT FOUND</h4>
                 </div>`);
                 console.error('Error:', error);
 

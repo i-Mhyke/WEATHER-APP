@@ -49,7 +49,11 @@ header{
     font-family: 'Playball', cursive;
     color: #E2B659;
 }
-
+/*@media (min-width: 576px) {  
+        #report_container{
+            margin-top: 20px;
+        }
+}*/
 
 
 
